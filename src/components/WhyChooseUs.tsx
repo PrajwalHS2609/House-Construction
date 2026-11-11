@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, CheckCircle2, ShieldCheck, FileSpreadsheet, Eye, Clock, Award, Hammer, Headphones } from 'lucide-react';
+import { IMAGES } from '../data/constructionData.ts';
 
 interface WhyChooseUsProps {
   onOpenEstimator: () => void;
@@ -76,7 +77,7 @@ export const WhyChooseUs: React.FC<WhyChooseUsProps> = ({ onOpenEstimator, onReq
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div className="relative rounded-sm overflow-hidden border border-[#DFD8CC] shadow-md bg-white flex-1 min-h-[460px]">
               <img
-                src="/src/assets/images/construction_structural_craft_1794391709989.jpg"
+                src={IMAGES.construction}
                 alt="Reinforced structural concrete framing and masonry precision at a Valence residential site"
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"

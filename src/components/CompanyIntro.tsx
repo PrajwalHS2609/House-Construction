@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowRight, CheckCircle2, Shield, Award, Users, HardHat } from 'lucide-react';
+import { IMAGES } from '../data/constructionData.ts';
 
 interface CompanyIntroProps {
   onLearnMore: () => void;
@@ -33,7 +34,7 @@ export const CompanyIntro: React.FC<CompanyIntroProps> = ({ onLearnMore, onReque
           <div className="lg:col-span-5 relative">
             <div className="relative rounded-sm overflow-hidden border border-[#DFD8CC] shadow-md bg-white">
               <img
-                src="/src/assets/images/luxury_interior_finishing_1794391709717.jpg"
+                src={IMAGES.finishing}
                 alt="Architectural residential craftsmanship and interior finishing"
                 className="w-full h-[420px] sm:h-[480px] object-cover"
                 referrerPolicy="no-referrer"

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ArrowRight, Compass, Sun, Wind, Grid3X3, Layers, CheckCircle2, Eye } from 'lucide-react';
+import { IMAGES } from '../data/constructionData.ts';
 
 interface ArchitecturalDesignProps {
   onRequestDesignDiscussion: () => void;
@@ -225,7 +226,7 @@ export const ArchitecturalDesign: React.FC<ArchitecturalDesignProps> = ({ onRequ
           <div className="lg:col-span-5 flex flex-col justify-between">
             <div className="relative rounded-sm overflow-hidden border border-[#E2E4E8] bg-white mb-6">
               <img
-                src="/src/assets/images/architectural_blueprint_plan_1794391710970.jpg"
+                src={IMAGES.blueprint}
                 alt="Architectural drafting desk with 2D blueprints and wooden scale model"
                 className="w-full h-64 object-cover"
                 referrerPolicy="no-referrer"

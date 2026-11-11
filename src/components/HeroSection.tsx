@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight, Compass, ShieldCheck, Ruler, CheckCircle2, Building2 } from 'lucide-react';
-import { TRUST_STATS } from '../data/constructionData.ts';
+import { TRUST_STATS, IMAGES } from '../data/constructionData.ts';
 
 interface HeroSectionProps {
   onOpenEstimator: () => void;
@@ -95,7 +95,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           <div className="lg:col-span-5 flex flex-col">
             <div className="relative group overflow-hidden rounded-sm border border-[#E2E4E8] bg-[#EFECE6] flex-1 min-h-[380px] sm:min-h-[440px]">
               <img
-                src="/src/assets/images/hero_luxury_modern_home_1794391709745.jpg"
+                src={IMAGES.hero}
                 alt="Contemporary luxury independent residential house at twilight by Valence"
                 className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 referrerPolicy="no-referrer"

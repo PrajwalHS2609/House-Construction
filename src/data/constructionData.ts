@@ -8,6 +8,18 @@ import {
   ConstructionGuide,
 } from '../types/index.ts';
 
+import heroImg from '../assets/images/hero_luxury_modern_home_1794391709745.jpg';
+import constructionImg from '../assets/images/construction_structural_craft_1794391709989.jpg';
+import blueprintImg from '../assets/images/architectural_blueprint_plan_1794391710970.jpg';
+import finishingImg from '../assets/images/luxury_interior_finishing_1794391709717.jpg';
+
+export const IMAGES = {
+  hero: heroImg,
+  construction: constructionImg,
+  blueprint: blueprintImg,
+  finishing: finishingImg,
+};
+
 export const COMPANY_NAME = "VALENCE RESIDENTIAL";
 export const COMPANY_TAGLINE = "Architectural Planning & Turnkey Home Construction";
 export const PHONE_NUMBER = "+1 (800) 482-5362";
@@ -35,7 +47,7 @@ export const SERVICES: ConstructionService[] = [
       "Complete civil masonry & roof slab casting",
       "Pre-handover 360° snag inspection"
     ],
-    image: "/src/assets/images/hero_luxury_modern_home_1794391709745.jpg",
+    image: IMAGES.hero,
     idealFor: "Plot owners seeking an enduring custom standalone residence",
     timeline: "8 - 12 Months"
   },
@@ -57,7 +69,7 @@ export const SERVICES: ConstructionService[] = [
       "Artisan joinery & specialized facade installations",
       "Post-occupancy warranty & maintenance dossier"
     ],
-    image: "/src/assets/images/luxury_interior_finishing_1794391709717.jpg",
+    image: IMAGES.finishing,
     idealFor: "Homeowners desiring a distinctive signature property",
     timeline: "10 - 14 Months"
   },
@@ -79,7 +91,7 @@ export const SERVICES: ConstructionService[] = [
       "Complete civil, MEP, joinery, and interior package",
       "Certified occupancy certificate & handover key set"
     ],
-    image: "/src/assets/images/construction_structural_craft_1794391709989.jpg",
+    image: IMAGES.construction,
     idealFor: "Busy professionals & NRIs needing hands-off reliability",
     timeline: "9 - 14 Months"
   },
@@ -101,7 +113,7 @@ export const SERVICES: ConstructionService[] = [
       "Door/window schedule & detailed joinery details",
       "Electrical, plumbing & HVAC schematic drawings"
     ],
-    image: "/src/assets/images/architectural_blueprint_plan_1794391710970.jpg",
+    image: IMAGES.blueprint,
     idealFor: "Clients wanting master-grade spatial planning before building",
     timeline: "4 - 8 Weeks"
   },
@@ -123,7 +135,7 @@ export const SERVICES: ConstructionService[] = [
       "Retaining wall and basement waterproofing engineering",
       "Certified Structural Stability Certificate"
     ],
-    image: "/src/assets/images/construction_structural_craft_1794391709989.jpg",
+    image: IMAGES.construction,
     idealFor: "High-spec homes, multi-story buildings, and difficult terrains",
     timeline: "3 - 5 Weeks"
   },
@@ -145,7 +157,7 @@ export const SERVICES: ConstructionService[] = [
       "Phased execution plan to minimize domestic disruption",
       "Updated MEP infrastructure and insulation upgrades"
     ],
-    image: "/src/assets/images/luxury_interior_finishing_1794391709717.jpg",
+    image: IMAGES.finishing,
     idealFor: "Heritage properties and outdated suburban residences",
     timeline: "2 - 6 Months"
   },
@@ -167,7 +179,7 @@ export const SERVICES: ConstructionService[] = [
       "Custom millwork & kitchen installation",
       "Complete fixture commissioning & final handover polish"
     ],
-    image: "/src/assets/images/luxury_interior_finishing_1794391709717.jpg",
+    image: IMAGES.finishing,
     idealFor: "Clients at the finishing phase seeking artisanal quality",
     timeline: "2 - 4 Months"
   },
@@ -189,7 +201,7 @@ export const SERVICES: ConstructionService[] = [
       "Waterproof structural connection between floors",
       "Separate utility metering and access stairways"
     ],
-    image: "/src/assets/images/construction_structural_craft_1794391709989.jpg",
+    image: IMAGES.construction,
     idealFor: "Expanding families requiring additional living space",
     timeline: "3 - 6 Months"
   }
@@ -208,7 +220,7 @@ export const FEATURED_PROJECTS: ProjectCaseStudy[] = [
     architecturalStyle: "Warm Brutalist & Tropical Modernism",
     completionYear: "2025",
     status: "Completed",
-    coverImage: "/src/assets/images/hero_luxury_modern_home_1794391709745.jpg",
+    coverImage: IMAGES.hero,
     description: "A striking multi-generational residence engineered with an open cantilevered living pavilion, internal sunken courtyard, and high-performance thermal double glazing.",
     structuralHighlights: [
       "12-meter column-free living span with post-tensioned beam",
@@ -242,7 +254,7 @@ export const FEATURED_PROJECTS: ProjectCaseStudy[] = [
     architecturalStyle: "Minimalist Sculptural Concrete",
     completionYear: "2025",
     status: "Completed",
-    coverImage: "/src/assets/images/construction_structural_craft_1794391709989.jpg",
+    coverImage: IMAGES.construction,
     description: "Engineered on a compact urban footprint, this home delivers soaring ceiling heights, an illuminated central skylight shaft, and flawless acoustic separation from street noise.",
     structuralHighlights: [
       "Raft foundation engineered for deep alluvial clay soil",
@@ -276,7 +288,7 @@ export const FEATURED_PROJECTS: ProjectCaseStudy[] = [
     architecturalStyle: "Contemporary Scandinavian-Indian Fusion",
     completionYear: "2024",
     status: "Completed",
-    coverImage: "/src/assets/images/luxury_interior_finishing_1794391709717.jpg",
+    coverImage: IMAGES.finishing,
     description: "Designed for a family of five, this duplex balances grand entertaining spaces on the ground floor with peaceful private suites and a terrace garden above.",
     structuralHighlights: [
       "Floating cantilevered steel staircase with oak treads",
@@ -310,7 +322,7 @@ export const FEATURED_PROJECTS: ProjectCaseStudy[] = [
     architecturalStyle: "International Modernist",
     completionYear: "2026",
     status: "Under Construction",
-    coverImage: "/src/assets/images/architectural_blueprint_plan_1794391710970.jpg",
+    coverImage: IMAGES.blueprint,
     description: "A flagship residential estate featuring an engineered basement spa, triple-height entry foyer, and motorized glass sliding pocket walls that vanish into cavity walls.",
     structuralHighlights: [
       "Reinforced concrete secant pile wall for watertight basement",
@@ -344,7 +356,7 @@ export const FEATURED_PROJECTS: ProjectCaseStudy[] = [
     architecturalStyle: "Vertical Urban Loft",
     completionYear: "2024",
     status: "Completed",
-    coverImage: "/src/assets/images/hero_luxury_modern_home_1794391709745.jpg",
+    coverImage: IMAGES.hero,
     description: "A masterclass in space maximization on a narrow city plot. Lightwells pierce through all three floors to channel daylight into every corner.",
     structuralHighlights: [
       "Under-reamed pile foundation ensuring zero settlement near adjacent walls",
@@ -378,7 +390,7 @@ export const FEATURED_PROJECTS: ProjectCaseStudy[] = [
     architecturalStyle: "Colonial Modern Architectural Revival",
     completionYear: "2024",
     status: "Completed",
-    coverImage: "/src/assets/images/luxury_interior_finishing_1794391709717.jpg",
+    coverImage: IMAGES.finishing,
     description: "Sensitive structural rehabilitation of a 45-year-old load-bearing masonry house into a breathable, solar-powered luxury family residence.",
     structuralHighlights: [
       "Insertion of structural steel portal frames to create open living layout",
